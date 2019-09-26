@@ -1,0 +1,15 @@
+<div ng-Model="rating" *ngIf="rating">
+     <div class="container jumbotron">
+           <img src="https://defensehelp.com/wp-content/uploads/2018/01/Ask-a-Former-Client-Feedback-Survey-Image-600.jpg" class="rounded mx-auto d-block" alt="Feedback">
+           <hr>
+            <div class="btn-lg">       
+                    <button type="button" class="btn btn-primary btn-lg btn-block" (click)="onSubmit()">Project Work</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" (click)="onSubmit()">Playing Game</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" (click)="onSubmit()">Family Work</button>
+            </div>
+      </div>
+
+</div>
+        <div *ngIf="!rating">
+            <app-rating-scale></app-rating-scale>
+          </div>
